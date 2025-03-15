@@ -1,0 +1,38 @@
+.app-header {
+  border-bottom: 1px solid var(--secondary-gray);
+  flex-shrink: 0;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;  
+  justify-content: space-between;
+}
+
+.header-nav  {
+    width: 257px;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    
+}
+
+.header-logo {
+    width: 184.5px;
+    height: 24px;
+}
+
+.header-navblock {
+  width: 77px;
+    height: 24px;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.header-line{
+  padding: 0px;
+  margin: 0px;
+}
