@@ -1,6 +1,6 @@
 import React from 'react';
 import MainLogo from './../../assets/svg/logo.svg';
-import Icons from '../Icons/Icons';
+import Icon from '../Icon/Icon';
 import '../Header/Header.scss';
 
 const Header = () => {
@@ -10,14 +10,14 @@ const Header = () => {
         <a href="#" className='header-logo'><img src={MainLogo} alt='Mainlogo'/></a>
         <nav className='header-nav'>
           <a href="#" className='header-nav-item'>
-            <Icons 
+            <Icon 
               iconname="person"
               width={'24'}
               height={'24'}/>
               <span>Log in</span>
           </a>
           <a href="#" className='header-nav-item'>
-            <Icons iconname="cart" width={'24'} height={'24'}/>
+            <Icon iconname="cart" width={'24'} height={'24'}/>
             <span>0</span>
           </a>
           <button type='button' className='header-menu-btn'></button>
