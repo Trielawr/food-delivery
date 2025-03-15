@@ -1,6 +1,6 @@
 import React from 'react';
-import mainphoto from '../Icons/Images/Photo-plate.png';
-import rucola from '../Icons/Images/rucola-png.png'
+import mainphoto from './../../assets/Images/Photo-plate.png';
+import rucola from './../../assets/Images/rucola-png.png'
 import '../FoodCourt/FoodCourt.scss'
 
 const FoodCourt = () => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import LemonPic from '../Icons/Images/lemon.jpg';
+import LemonPic from './../../assets/Images/lemon.jpg';
 
 const Lemons = () => {
   return (

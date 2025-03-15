@@ -15,13 +15,13 @@ function App() {
     <div className="App">
       <Header />
       <main className='app-main-content'>
-      {/* <FoodCourt/>
+      <FoodCourt/>
       <Restaurants/>
       <NearestRestaurants/>
       <Specialities/>
       <Lemons/>
       <Map/>
-      <Instagram/> */}
+      <Instagram/>
         
       </main>
       <Footer/>

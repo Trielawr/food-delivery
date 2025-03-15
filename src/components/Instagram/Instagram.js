@@ -1,8 +1,8 @@
 import React from 'react';
-import Rectangle_1 from '../Icons/Instagram_Icons/Rectangle_1.jpg';
-import Rectangle_2 from '../Icons/Instagram_Icons/Rectangle_2.jpg';
-import Rectangle_3 from '../Icons/Instagram_Icons/Rectangle_3.jpg';
-import Rectangle_4 from '../Icons/Instagram_Icons/Rectangle_4.jpg';
+import Rectangle_1 from './../../assets/Instagram_Icons/Rectangle_1.jpg';
+import Rectangle_2 from './../../assets/Instagram_Icons/Rectangle_2.jpg';
+import Rectangle_3 from './../../assets/Instagram_Icons/Rectangle_3.jpg';
+import Rectangle_4 from './../../assets/Instagram_Icons/Rectangle_4.jpg';
 
 const Instagram = () => {
   return (

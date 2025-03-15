@@ -3,7 +3,7 @@
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 300;
-  src: url('../src/components/fonts/poppins-v22-latin-300.woff2') format('woff2');
+  src: url('../src/assets/fonts/poppins-v22-latin-300.woff2') format('woff2');
 }
  
 @font-face {
@@ -11,7 +11,7 @@
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
-  src: url('../src/components/fonts/poppins-v22-latin-600.woff2') format('woff2');
+  src: url('../src/assets/fonts/poppins-v22-latin-600.woff2') format('woff2');
 }
 
 @font-face {
@@ -19,7 +19,7 @@
   font-family: 'Martel Sans';
   font-style: normal;
   font-weight: 300;
-  src: url('../src/components/fonts/martel-sans-v13-latin-300.woff2') format('woff2');
+  src: url('../src/assets/fonts/martel-sans-v13-latin-300.woff2') format('woff2');
  }
 
 @font-face {
@@ -27,7 +27,7 @@
   font-family: 'Martel Sans';
   font-style: normal;
   font-weight: 400;
-  src: url('../src/components/fonts/martel-sans-v13-latin-regular.woff2') format('woff2');
+  src: url('../src/assets/fonts/martel-sans-v13-latin-regular.woff2') format('woff2');
 }
 
 
@@ -36,7 +36,7 @@
   font-family: 'Martel Sans';
   font-style: normal;
   font-weight: 700;
-  src: url('../src/components/fonts/martel-sans-v13-latin-700.woff2') format('woff2');
+  src: url('../src/assets/fonts/martel-sans-v13-latin-700.woff2') format('woff2');
 }
 
 @font-face {
@@ -44,7 +44,7 @@
   font-family: 'Martel Sans';
   font-style: normal;
   font-weight: 800;
-  src: url('../src/components/fonts/martel-sans-v13-latin-800.woff2') format('woff2');
+  src: url('../src/assets/fonts/martel-sans-v13-latin-800.woff2') format('woff2');
 }
 
 html {
