@@ -68,3 +68,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Design
+
+[https://www.figma.com/design/nVsGJIw0PtJycTf1q8RKxT/Food-delivery-concept-(Community)?node-id=3-0&t=ftfmW6EAyysDZOKI-0](<https://www.figma.com/design/nVsGJIw0PtJycTf1q8RKxT/Food-delivery-concept-(Community)?node-id=3-0&t=ftfmW6EAyysDZOKI-0>)
