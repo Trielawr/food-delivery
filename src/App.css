@@ -1,9 +1,8 @@
 .App {
-  text-align: center;
-  display: flex;
   flex-direction: column;
   align-items: stretch;
   min-height: 100vh;
+  display: flex;
 }
 
 .app-main-content {
