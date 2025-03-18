@@ -1,0 +1,75 @@
+.restorans {
+
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 48px;
+    }
+
+    &-body {
+        margin-right: -12px;
+        margin-left: -12px;
+        position: relative;
+
+        &::before,
+        &::after {
+            display: block;
+            content: '';
+            position: absolute;
+            z-index: 10;
+            pointer-events: none;
+            top: 0;
+            bottom: 0;
+            width: 12px;
+        }
+
+        &:before {
+            left: 0;
+            background: rgb(255, 255, 255);
+            background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+        }
+        
+        &:after {
+            right: 0;
+            background: rgb(255, 255, 255);
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+        }
+    }
+
+    &-item {
+        padding-left: 12px;
+        padding-right: 12px;
+
+        &-photo {
+            padding-bottom: 62%;
+        }
+
+        &-logo {
+            display: flex;
+            height: 112px;
+            justify-content: center;
+            align-items: center;
+
+            img {
+              display: block; 
+              max-width: 100%; 
+              max-height: 100%;
+            }
+        }
+    
+    }
+
+}
+
+.show-all-btn{
+    background-color: var(--secondary-super-light-gray);
+    font-family: "Martel Sans", sans-serif;
+    color: var(--secondary-gray);
+    flex-shrink: 0;
+    padding: 16px 24px;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    border: none;
+}

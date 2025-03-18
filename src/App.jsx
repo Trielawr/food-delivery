@@ -6,7 +6,7 @@ import FoodCourt from './components/FoodCourt/FoodCourt';
 // import Lemons from './components/Lemons/Lemons';
 // import Map from './components/Map/Map';
 // import NearestRestaurants from './components/NearestRestaurants/NearestRestaurants';
-// import Restaurants from './components/Restaurants/Restaurants';
+import Restaurants from './components/Restaurants/Restaurants';
 // import Specialities from './components/Specialities/Specialities';
 
 
@@ -16,8 +16,8 @@ function App() {
       <Header />
       <main className='app-main-content'>
         <FoodCourt />
-        {/* <Restaurants />
-        <NearestRestaurants />
+        <Restaurants />
+        {/* <NearestRestaurants />
         <Specialities />
         <Lemons />
         <Map />
