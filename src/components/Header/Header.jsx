@@ -7,7 +7,9 @@ const Header = () => {
   return (
     <div className='app-header'>
       <div className='header-container container'>
-        <a href="#" className='header-logo'><img src={MainLogo} alt='Mainlogo'/></a>
+        <a href="#" className='header-logo'>
+          <img src={MainLogo} alt='Mainlogo' />
+        </a>
         <nav className='header-nav'>
           <a href="#" className='header-nav-item'>
             <Icon 
