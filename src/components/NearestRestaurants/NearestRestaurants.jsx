@@ -1,8 +1,21 @@
-import React from 'react'
+import React from 'react';
+import './NearestRestaurants.scss';
+
 
 const NearestRestaurants = () => {
   return (
-    <div>NearestRestaurants</div>
+    <div className='nearest-bg'>
+      <div className='nearest container object-fit'>
+      <div className='nearest-text'>
+        <h1 className='nearest-text-logo'>Your nearest restaurants</h1>
+        <p className='nearest-text-item'>Each kitchen works with its own delivery area to deliver food to you as soon as possible</p>
+      </div>
+      <div className='nearest-adress'>
+        <input className='nearest-adress-input' type='adress' placeholder='Enter delivery adress'/>
+        <button className='nearest-adress-btn' type='button'>Send</button>
+      </div>
+      </div>
+    </div>
   )
 }
 
