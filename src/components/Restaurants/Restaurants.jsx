@@ -13,7 +13,7 @@ const Restaurants = () => {
     slidesToShow: 4,
     slidesToScroll: 1,
     swipeToSlide: true,
-    centerPadding: '100px',
+    centerPadding: '100px'
 };
 
   return (

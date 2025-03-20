@@ -4,8 +4,8 @@
 
 .nearest {
     display: flex;
-    padding: 80px;
-    justify-content: space-around;
+    padding: 80px 74px;
+    justify-content: space-between;
     align-items: center;
 
      
@@ -15,6 +15,7 @@
             font-family: "Poppins", sans-serif;
             text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
             letter-spacing: 1.8px;
+            line-height: 64px;
             font-size: 36px;
             color: var(--secondary-dark-gray);
             margin-bottom: 24px;
@@ -31,20 +32,37 @@
 
     &-adress {
         flex-shrink: 0;
+        font-family: "Martel Sans", sans-serif;
+        font-size: 16px;
+        letter-spacing: 1.5px;
+        color: var(--secondary-gray);
+                    
 
         &-input {
             box-shadow: 0 8px 40px rgba(0, 0, 0, 0.08);
+            border-radius: 6px;
+            padding: 24px 16px;
+            line-height: 24px;
             border: none;
-            width: 15vw;
-            height: 5em;
+            width: 320px ;
+        }
+
+        &-input::placeholder{
+            background-image: url(/assets/svg/location.svg);
+            background-repeat: no-repeat;
+            background-color: transparent;
+            position: relative;
+            padding-left: 32px;
         }
 
         &-btn {
             padding: 28px 24px;
             background-color: var(--primary-yellow);
             border: none;
+            line-height: 20px;
             border-radius: 4px;
             margin-left: 4px;
+            color: var(--secondary-gray);
         }
 
     }
