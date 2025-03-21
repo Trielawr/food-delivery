@@ -2,9 +2,37 @@ import React from 'react';
 import './Restaurants.scss';
 import Slider from "react-slick";
 import Icon from '../Icon/Icon'
+import styles from './Restaurants.scss';
 
 
 const Restaurants = () => {
+  function NextArrow(props) {
+    const { className, style, onClick } = props;
+
+    return (
+      <button
+        type="button"
+        className={className}
+        onClick={onClick}
+      >
+        <Icon className={styles.rotateIcon} iconname="left" width={'24'} height={'24'}/>
+      </button>
+    );
+  }
+
+  function PrevArrow(props) {
+    const { className, style, onClick } = props;
+
+    return (
+      <button
+        type="button"
+        className={className}
+        onClick={onClick}
+      >
+        <Icon iconname="left" width={'24'} height={'24'}/>
+      </button>
+    );
+  }
 
   const settings = {
     dots: false,
@@ -13,7 +41,9 @@ const Restaurants = () => {
     slidesToShow: 4,
     slidesToScroll: 1,
     swipeToSlide: true,
-    centerPadding: '100px'
+    centerPadding: '100px',
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />
 };
 
   return (
@@ -24,9 +54,6 @@ const Restaurants = () => {
           <button className='show-all-btn' type='button'>show all</button>
         </div>
         <div className='restorans-body'>
-          <button className='restorans-slider-btn btn-right' type='button'>
-            <Icon iconname="left" width={'24'} height={'24'}/>
-          </button>
           <Slider {...settings}>
             <div className='restorans-item'>
               <div className='restorans-item-photo object-fit'>
@@ -69,9 +96,6 @@ const Restaurants = () => {
               </div>
             </div>
           </Slider> 
-            <button className='restorans-slider-btn btn-left' type='button'>
-            <Icon iconname="left" width={'24'} height={'24'}/>
-          </button>
         </div>
       </div>
     </div>

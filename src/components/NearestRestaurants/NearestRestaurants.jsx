@@ -4,7 +4,7 @@ import './NearestRestaurants.scss';
 const NearestRestaurants = () => {
   return (
     <div className='nearest-bg'>
-      <div className='nearest container object-fit'>
+      <div className='nearest container'>
         <div className='nearest-text'>
           <h1 className='nearest-text-logo'>Your nearest restaurants</h1>
           <p className='nearest-text-item'>Each kitchen works with its own delivery area to deliver food to you as soon as possible</p>
