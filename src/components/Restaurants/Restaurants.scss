@@ -1,5 +1,5 @@
 .restorans {
-    padding-bottom: 67px;
+    padding-bottom: 72px;
 
     &-header {
         display: flex;
@@ -68,18 +68,7 @@
         }
     
     }
-}
 
-.show-all-btn{
-    background-color: var(--secondary-super-light-gray);
-    font-family: "Martel Sans", sans-serif;
-    color: var(--secondary-gray);
-    flex-shrink: 0;
-    padding: 16px 24px;
-    border-radius: 4px;
-    font-weight: 400;
-    font-size: 16px;
-    border: none;
 }
 
 .slick-arrow {

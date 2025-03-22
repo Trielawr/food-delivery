@@ -1,13 +1,14 @@
 import React from 'react';
 import './Restaurants.scss';
+import '../Button/Button.scss';
 import Slider from "react-slick";
-import Icon from '../Icon/Icon'
-import styles from './Restaurants.scss';
-
+import Icon from '../Icon/Icon';
+import Button from '../Button/Button';
 
 const Restaurants = () => {
-  function NextArrow(props) {
-    const { className, style, onClick } = props;
+
+    function NextArrow(props) {
+    const { className, onClick } = props;
 
     return (
       <button
@@ -15,13 +16,13 @@ const Restaurants = () => {
         className={className}
         onClick={onClick}
       >
-        <Icon className={styles.rotateIcon} iconname="left" width={'24'} height={'24'}/>
+        <Icon iconname="left" width={'24'} height={'24'}/>
       </button>
     );
   }
 
   function PrevArrow(props) {
-    const { className, style, onClick } = props;
+    const { className, onClick } = props;
 
     return (
       <button
@@ -35,23 +36,26 @@ const Restaurants = () => {
   }
 
   const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    swipeToSlide: true,
-    centerPadding: '100px',
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />
-};
+      dots: false,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      swipeToSlide: true,
+      centerPadding: '100px',
+      nextArrow: <NextArrow />,
+      prevArrow: <PrevArrow />
+  }
 
   return (
     <div className='restorans'>
       <div className='container'>
         <div className='restorans-header'>
           <h2>Restaurants</h2>
-          <button className='show-all-btn' type='button'>show all</button>
+          <Button
+            className='gray-btn'
+            text='show all'
+          />
         </div>
         <div className='restorans-body'>
           <Slider {...settings}>

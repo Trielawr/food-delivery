@@ -1,5 +1,7 @@
 import React from 'react';
 import './NearestRestaurants.scss';
+import '../Button/Button.scss';
+import Button from '../Button/Button';
 
 const NearestRestaurants = () => {
   return (
@@ -11,7 +13,10 @@ const NearestRestaurants = () => {
         </div>
         <div className='nearest-adress'>
           <input className='nearest-adress-input' type='adress' placeholder='Enter delivery adress'/>
-          <button className='nearest-adress-btn' type='button'>send</button>
+          <Button
+            className='yellow-btn'
+            text='sent'
+          />
         </div>
       </div>
     </div>
