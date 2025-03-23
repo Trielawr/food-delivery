@@ -1,5 +1,6 @@
 .specialities {
     padding-top: 72px;
+    margin-bottom: 72px;
 
         &-header {
             display: flex;
@@ -7,4 +8,66 @@
             align-items: flex-start;
             margin-bottom: 48px;
          }
+
+        &-body {
+            position: relative;
+        }
+
+        &-item {
+            box-shadow: 0 2px 16px rgba(60, 62, 74, 0.08);
+            // margin: 16px 24px;
+            padding-left: 12px;
+            padding-left: 12px;
+            text-align: center;
+            width: 136px;
+
+            svg {
+                margin-top: 24px;
+                display: inline-block;
+            }
+     
+            p {
+               width: 100%;
+               margin-bottom: 8px;
+               padding: 16px 8px
+            }
+            
+        }
+}
+
+.slick-arrow {
+    transition: background-color 0.3s ease;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.08);
+    background-color: var(--primary-white);
+    border-radius: 50%;
+    display: block;
+    border: none;
+    height: 48px;
+    width: 48px;
+    z-index: 20;
+
+    &:focus {
+        background-color: var(--primary-white);
+    }
+
+    &:hover {
+        background-color: var(--secondary-super-light-gray);
+    }
+
+    svg {
+        position: absolute;
+        display: block;
+        margin: auto;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        top: 0;
+    }
+}
+
+
+.slick-next {
+    svg {
+        transform: rotate(180deg);
+    }
 }

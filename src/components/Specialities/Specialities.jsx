@@ -40,7 +40,7 @@ const Specialities = () => {
       dots: false,
       infinite: true,
       speed: 500,
-      slidesToShow: 4,
+      slidesToShow: 8,
       slidesToScroll: 1,
       swipeToSlide: true,
       centerPadding: '100px',
@@ -60,73 +60,45 @@ const Specialities = () => {
           text='show all'
         />
       </div>
-      <div className='specialities-body'>
+        <div className='specialities-body'>
+          {/* <div className="slider-container"> */}
          <Slider {...settings}>
-            <div className='slider-item'>
-              <div className='slider-item-photo object-fit'>
-                <Icon iconname="bagel" width={'48'} height={'48'}/>
-              </div>
-              <div className='slider-item-logo'>
-                <img src='/img/Restauran_Icons/Believe-logo.png' alt="" />
+            <div className='specialities-item'>
+              <div>
+                <Icon className='specialities-item-icon' iconname="bagel" width={'48'} height={'48'} />
+                <p>Bagel</p>
               </div>
             </div>
-            <div className='slider-item'>
-              <div className='slider-item-photo object-fit'>
+            <div className='specialities-item'>
                 <Icon iconname="burger" width={'48'} height={'48'}/>
-              </div>
-              <div className='slider-item-logo'>
-                <img src='/img/Restauran_Icons/burger-logo.png' alt="" />
-              </div>
+                <p>Burger</p>
             </div>
-            <div className='slider-item'>
-              <div className='slider-item-photo object-fit'>
+            <div className='specialities-item'>
                 <Icon iconname="chicken" width={'48'} height={'48'}/>
-              </div>
-              <div className='slider-item-logo'>
-                <img src='/img/Restauran_Icons/il_paster-logo.png' alt="" />
-              </div>
+                <p>Chicken</p>
             </div>
-            <div className='slider-item'>
-              <div className='slider-item-photo object-fit'>
+            <div className='specialities-item'>
                 <Icon iconname="fish" width={'48'} height={'48'}/>
-              </div>
-              <div className='slider-item-logo'>
-                <img src='/img/Restauran_Icons/vietnamese-logo.png' alt="" />
-              </div>
+                <p>Fish</p>
             </div>
-            <div className='slider-item'>
-              <div className='slider-item-photo object-fit'>
+            <div className='specialities-item'>
                 <Icon iconname="fishnchips" width={'48'} height={'48'}/>
-              </div>
-              <div className='slider-item-logo'>
-                <img src='/img/Restauran_Icons/Believe-logo.png' alt="" />
-              </div>
+                <p>Fish’Chips</p>
             </div>
-            <div className='slider-item'>
-              <div className='slider-item-photo object-fit'>
+            <div className='specialities-item'>
                 <Icon iconname="vegan" width={'48'} height={'48'}/>
-              </div>
-              <div className='slider-item-logo'>
-                <img src='/img/Restauran_Icons/Believe-logo.png' alt="" />
-              </div>
+                <p>Vegan</p>
             </div>
-            <div className='slider-item'>
-              <div className='slider-item-photo object-fit'>
+            <div className='specialities-item'>   
                 <Icon iconname="pizza" width={'48'} height={'48'}/>
-              </div>
-              <div className='slider-item-logo'>
-                <img src='/img/Restauran_Icons/Believe-logo.png' alt="" />
-              </div>
+                <p>Pizza</p>      
             </div>
-            <div className='slider-item'>
-              <div className='slider-item-photo object-fit'>
+            <div className='specialities-item'>    
                 <Icon iconname="raviolli" width={'48'} height={'48'}/>
-              </div>
-              <div className='slider-item-logo'>
-                <img src='/img/Restauran_Icons/Believe-logo.png' alt="" />
-              </div>
+                <p>Pasta</p>          
             </div>
           </Slider> 
+         {/* </div> */}
       </div>       
       </div>
 
