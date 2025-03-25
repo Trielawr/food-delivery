@@ -11,15 +11,17 @@
 
         &-body {
             position: relative;
+            margin-top: 2px;
+            margin-bottom: 2px;
         }
 
         &-item {
             box-shadow: 0 2px 16px rgba(60, 62, 74, 0.08);
-            // margin: 16px 24px;
             padding-left: 12px;
             padding-left: 12px;
             text-align: center;
             width: 136px;
+            margin-left: 12px;
 
             svg {
                 margin-top: 24px;

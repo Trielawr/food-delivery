@@ -47,6 +47,22 @@
   src: url('../src/assets/fonts/martel-sans-v13-latin-800.woff2') format('woff2');
 }
 
+@font-face {
+  font-display: swap;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../src/assets/fonts/open-sans-v40-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../src/assets/fonts/open-sans-v40-latin-700.woff2') format('woff2');
+}
+
 html {
   display: block;
   height: 100%;

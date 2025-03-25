@@ -1,9 +1,9 @@
 .lemons {
     background-image: url('../../assets/Images/lemon.jpg');
-    // background-position: 100% 0;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%;
-    height: 284px;
+    background-size: cover;
+
  
     &-item {
        padding-top: 79px;
@@ -11,17 +11,42 @@
        position: relative;
        align-items: center;
        justify-content: space-around;
+       height: 284px;
 
        &-ellips {
+            position: relative;
+            text-align: center;
 
+            &-circle {
+                position: absolute;
+                top: -23px;
+                left: calc((100% - 126px) / 2);
+            }
 
-       }
+            &-number {
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 700;
+                position: absolute;
+                font-size: 58px;
+                top: 13px;
+                margin: 0 auto;
+                text-align: center;
+                left: calc((100% - 34px) / 2);
+             
+            }
 
-       &-circle {
-           position: absolute;
+            &-number span {
+               left: calc((100% - 34px) / 2); 
+               position: absolute;
+            }
+
+            &-text {
+                font-family: "Poppins", sans-serif;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 32px;
+                padding-top: 2px;
+            }
        }
     }
-
-    
-
 }
