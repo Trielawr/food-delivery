@@ -1,25 +1,31 @@
 .social {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-    line-height: 1.78;
-    letter-spacing: 0.8%;
-    color: var(--secondary-gray);
-      
+    background-image: url(../../assets/svg/border.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    background-size: calc(100% + 19px);
+    left: -20px;
+ 
 
     &-photo {
-        display: flex;
-        justify-content: space-between;
+      position: static;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 79px;
     }
 
     h3 {
-      padding-bottom: 21px;  
-      border: 1px dashed var(--border-dashed);
-      border-radius: 5px;
-    }
+      font-family: 'Poppins', sans-serif;
+      font-weight: 300;
+      line-height: 64px;
+      font-size: 36px;
+      letter-spacing: 0.8%;
+      color: var(--secondary-gray);
+      padding: 20px 20px 0 20px;
+      position: relative;
+     }
 
 }
 
 .social span {
   color: var(--black);
-
 }

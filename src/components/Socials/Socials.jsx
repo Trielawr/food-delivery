@@ -7,15 +7,13 @@ import Rectangle_4 from './../../assets/Instagram_Icons/Rectangle_4.jpg';
 
 const Socials = () => {
   return (
-      <div className='container'>
-        <div className='social'>
-          <h3><span>#YellowKitchens </span>in instagram</h3>
-            <div className='social-photo'>
-              <img src={Rectangle_1} alt='kitchen_1'></img>
-              <img src={Rectangle_2} alt='kitchen_2'></img>
-              <img src={Rectangle_3} alt='kitchen_3'></img>
-              <img src={Rectangle_4} alt='kitchen_4'></img>
-            </div>
+    <div className='social container'>
+      <h3><span>#YellowKitchens </span>in instagram</h3>
+        <div className='social-photo'>
+          <img src={Rectangle_1} alt='kitchen_1'></img>
+          <img src={Rectangle_2} alt='kitchen_2'></img>
+          <img src={Rectangle_3} alt='kitchen_3'></img>
+          <img src={Rectangle_4} alt='kitchen_4'></img>
         </div>
     </div>
   )
