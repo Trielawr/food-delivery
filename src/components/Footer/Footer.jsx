@@ -1,6 +1,8 @@
 import React from 'react'
 import '../Footer/Footer.scss';
 import Icon from '../Icon/Icon';
+import  AppleStore  from './../../assets/Images/AppleStore.png';
+import  Googleplay  from './../../assets/Images/Googleplay.png';
 import { footerData } from '../../data/webdata';
 import FooterDataComponent from './FooterDataComponent';
 
@@ -11,25 +13,23 @@ const Footer = () => {
       <div className='footer-nav'>
         <nav className='footer-nav-logo'>
           <a href="#" >
-            <Icon iconname='logo-w' width={184} height={24}/>
+            <Icon iconname='Logo-w' width={184} height={24}/>
           </a>
+        </nav>  
           <div className='footer-nav-social'>
             <a href="#" className='footer-nav-social-store'>
-              <Icon iconname='appstore' width={79} height={27}/>
+              <img src={AppleStore }  alt='AppleStore'/>
             </a>
             <a href="#" className='footer-nav-social-google'>
-              <Icon iconname='googleplay' width={86} height={27}/>
+              <img src={Googleplay }  alt='Googleplay'/>
             </a>    
           </div>
-        </nav>
-          <nav className='footer-nav-list'>
-            <ul>
+            <ul className='footer-nav-list'>
               {footerData.map((item, index) =>
                 <li className='footer-nav-list-itemtitle' key={index}>{item.title}
                   <FooterDataComponent item={ item.item }/>
                 </li>)}
             </ul>
-        </nav>
       </div>
       <div className='footer-bottom'>
           <div className='footer-bottom-social'>

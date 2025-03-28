@@ -58,7 +58,7 @@ export const footerData = [
       },
       {
         to: '/categorypage',
-        name: '69 avenue de la Republique 75011 Paris SERIES',
+        name: '69 avenue de la Republique 75011 Paris',
       },
       {
         to: '/categorypage',
