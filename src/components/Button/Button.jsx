@@ -1,13 +1,21 @@
 import React from 'react'
 
-const Button = ({className, type, text}) => {
+const Button = ({ className, type, text, href }) => {
   return (
     <>
-        <button
+      {(type != 'link') ?
+        < button
             className={className}
             type={type || 'button'}>
             {text}
-        </button>
+        </button >
+        :
+        <a
+          className={className}
+          href={`${href}`}>
+          {text}
+        </a>
+      }
     </>
   )
 }

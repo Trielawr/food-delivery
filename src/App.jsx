@@ -3,7 +3,7 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import FoodCourt from './components/FoodCourt/FoodCourt';
 import Socials from './components/Socials/Socials';
-import Lemons from './components/Lemons/Lemons';
+import Achievements from './components/Achievements/Achievements';
 import Map from './components/Map/Map';
 import NearestRestaurants from './components/NearestRestaurants/NearestRestaurants';
 import Restaurants from './components/Restaurants/Restaurants';
@@ -19,7 +19,7 @@ function App() {
         <Restaurants />
         <NearestRestaurants />
         <Specialities />
-        <Lemons />
+        <Achievements />
         <Map />
         <Socials /> 
       </main>

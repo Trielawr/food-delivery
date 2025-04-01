@@ -48,54 +48,54 @@ const Restaurants = () => {
   }
 
   return (
-    <div className='restorans'>
+    <div className='restaurans'>
       <div className='container'>
-        <div className='restorans-header'>
+        <div className='restaurans-header'>
           <h2>Restaurants</h2>
           <Button
             className='gray-btn'
             text='show all'
           />
         </div>
-        <div className='restorans-body'>
+        <div className='restaurans-body'>
           <Slider {...settings}>
-            <div className='restorans-item'>
-              <div className='restorans-item-photo object-fit'>
+            <div className='restaurans-item'>
+              <div className='restaurans-item-photo object-fit'>
                 <img src='/img/Restauran_Icons/Believe.jpg' alt="" />
               </div>
-              <div className='restorans-item-logo'>
+              <div className='restaurans-item-logo'>
                 <img src='/img/Restauran_Icons/Believe-logo.png' alt="" />
               </div>
             </div>
-            <div className='restorans-item'>
-              <div className='restorans-item-photo object-fit'>
+            <div className='restaurans-item'>
+              <div className='restaurans-item-photo object-fit'>
                 <img src='/img/Restauran_Icons/burger.jpg' alt="" />
               </div>
-              <div className='restorans-item-logo'>
+              <div className='restaurans-item-logo'>
                 <img src='/img/Restauran_Icons/burger-logo.png' alt="" />
               </div>
             </div>
-            <div className='restorans-item'>
-              <div className='restorans-item-photo object-fit'>
+            <div className='restaurans-item'>
+              <div className='restaurans-item-photo object-fit'>
                 <img src='/img/Restauran_Icons/il_paster.jpg' alt="" />
               </div>
-              <div className='restorans-item-logo'>
+              <div className='restaurans-item-logo'>
                 <img src='/img/Restauran_Icons/il_paster-logo.png' alt="" />
               </div>
             </div>
-            <div className='restorans-item'>
-              <div className='restorans-item-photo object-fit'>
+            <div className='restaurans-item'>
+              <div className='restaurans-item-photo object-fit'>
                 <img src='/img/Restauran_Icons/vietnamese.jpg' alt="" />
               </div>
-              <div className='restorans-item-logo'>
+              <div className='restaurans-item-logo'>
                 <img src='/img/Restauran_Icons/vietnamese-logo.png' alt="" />
               </div>
             </div>
-            <div className='restorans-item'>
-              <div className='restorans-item-photo object-fit'>
+            <div className='restaurans-item'>
+              <div className='restaurans-item-photo object-fit'>
                 <img src='/img/Restauran_Icons/Believe.jpg' alt="" />
               </div>
-              <div className='restorans-item-logo'>
+              <div className='restaurans-item-logo'>
                 <img src='/img/Restauran_Icons/Believe-logo.png' alt="" />
               </div>
             </div>

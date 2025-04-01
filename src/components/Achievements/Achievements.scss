@@ -1,4 +1,4 @@
-.lemons {
+.achievements {
     background-image: url('../../assets/Images/lemon.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -6,38 +6,34 @@
 
  
     &-item {
-       padding-top: 79px;
        display: flex;
        position: relative;
        align-items: center;
+       text-align: center;
        justify-content: space-around;
        height: 284px;
 
-       &-ellips {
+       &-ellipse {
             position: relative;
-            text-align: center;
 
             &-circle {
-                position: absolute;
-                top: -23px;
-                left: calc((100% - 126px) / 2);
-            }
+                border: 1px solid var(--primary-dark-yellow);
+                border-radius: 50%;
+                height: 127px;
+                width: 127px;
+                box-shadow: 0px 24px 0px 0px var(--primary-yellow), 0px 24px 0px 0px var(--primary-white) inset;
+                background-color: var(--primary-yellow);
+                margin: 0 auto;
 
-            &-number {
+                span {
                 font-family: 'Open Sans', sans-serif;
                 font-weight: 700;
-                position: absolute;
                 font-size: 58px;
-                top: 13px;
-                margin: 0 auto;
-                text-align: center;
-                left: calc((100% - 34px) / 2);
-             
-            }
-
-            &-number span {
-               left: calc((100% - 34px) / 2); 
-               position: absolute;
+                position: absolute;
+                top: 38%;
+                left: 50%;
+                transform: translate(-50%, -50%);  
+                }
             }
 
             &-text {
@@ -45,8 +41,8 @@
                 font-weight: 700;
                 font-size: 24px;
                 line-height: 32px;
-                padding-top: 2px;
+                padding-top: 26px;
             }
-       }
-    }
+        }
+    }      
 }

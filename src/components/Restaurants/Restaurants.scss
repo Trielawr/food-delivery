@@ -1,4 +1,4 @@
-.restorans {
+.restaurans {
     padding-bottom: 72px;
 
     &-header {
@@ -81,7 +81,8 @@
         background-color: var(--primary-white);
     }
 
-    &:hover {
+    &,
+    svg:hover {
         background-color: var(--secondary-super-light-gray);
     }
 

@@ -2,14 +2,18 @@ import React from 'react';
 import MainLogo from './../../assets/svg/logo.svg';
 import Icon from '../Icon/Icon';
 import '../Header/Header.scss';
+import Button from '../Button/Button';
 
 const Header = () => {
   return (
     <div className='app-header'>
       <div className='header-container container'>
-        <a href="#" className='header-logo'>
-          <img src={MainLogo} alt='Mainlogo' />
-        </a>
+        <Button
+          type='link'
+          href="#"
+          className='header-logo'
+          text={<img src={MainLogo} alt='Mainlogo' />}
+        />
         <nav className='header-nav'>
           <a href="#" className='header-nav-item'>
             <Icon 
