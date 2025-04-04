@@ -29,7 +29,7 @@ export const footerData = [
     item : [
       {
         to: '/aboutuspage',
-        name: 'Про Read FAQs',
+        name: 'Read FAQs',
       },
       {
         to: '/contactspage',
@@ -61,11 +61,11 @@ export const footerData = [
         name: '69 avenue de la Republique 75011 Paris',
       },
       {
-        to: '/categorypage',
+        to: 'tel:0800 111 126',
         name: '0800 111 126',
       },
       {
-        to: '/categorypage',
+        to: 'mail:contact@yellowkitchens.com',
         name: 'contact@yellowkitchens.com',
       },
     ]

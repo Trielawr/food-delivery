@@ -5,28 +5,39 @@ import  AppleStore  from './../../assets/Images/AppleStore.png';
 import  Googleplay  from './../../assets/Images/Googleplay.png';
 import { footerData } from '../../data/webdata';
 import FooterDataComponent from './FooterDataComponent';
+import Button from '../Button/Button';
 
 const Footer = () => {
   return (
     <footer className='footer'>
       <div className='container'>
       <div className='footer-nav'>
-        <nav className='footer-nav-logo'>
-          <a href="#" >
-            <Icon iconname='Logo-w' width={184} height={24}/>
-          </a>
-        </nav>  
+         <nav className='footer-nav-logo'>
+           <div className='footer-nav-logo-icon'> 
+             <a href="#" style={{width: '184px'}} >
+               <Icon iconname='Logo-w' width={184} height={24}/>
+             </a>
+           </div>
+         </nav>  
           <div className='footer-nav-social'>
-            <a href="#" className='footer-nav-social-store'>
+            <a href='http://appstore.com/appstore' className='footer-nav-social-store'>
               <img src={AppleStore }  alt='AppleStore'/>
             </a>
-            <a href="#" className='footer-nav-social-google'>
+            <a href="https://play.google.com/store/apps?hl=en-us" className='footer-nav-social-google'>
               <img src={Googleplay }  alt='Googleplay'/>
             </a>    
           </div>
             <ul className='footer-nav-list'>
               {footerData.map((item, index) =>
-                <li className='footer-nav-list-itemtitle' key={index}>{item.title}
+                <li key={index}>
+                  <h2>
+                    <Button
+                      className='footer-nav-list-itemtitle'
+                      type='link'
+                      text={item.title}
+                      href="#"
+                    />
+                </h2>
                   <FooterDataComponent item={ item.item }/>
                 </li>)}
             </ul>
@@ -43,11 +54,25 @@ const Footer = () => {
               <Icon iconname='fb' width={24} height={24}/>
             </a>
           </div>
-          <div className='footer-bottom-privacy'>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms</a>
-            <p>© 2020 Yellow kitchen</p>
-          </div>
+          <ul className='footer-bottom-privacy'>
+            <li>
+              <Button
+                  type='link'
+                  text='Privacy Policy'
+                  href="#"
+              />
+            </li>
+            <li>
+              <Button
+                  type='link'
+                  text='Terms'
+                  href="#"
+              />
+            </li>
+            <span>
+              <p>© 2020 Yellow kitchen</p>
+            </span>
+          </ul>
       </div>
       </div>
     </footer>

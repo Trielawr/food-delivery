@@ -1,17 +1,25 @@
 import React from 'react';
 import '../Footer/Footer.scss';
+import Button from '../Button/Button';
 
 const FooterDataComponent = ({ item }) => {
-    console.log('item', item);
+
   return (
-      <div>
+      <>
           <ul className='footer-nav-list-itemlist'>
               {item.map((subitem, index) => 
-                  <li className='footer-nav-list-item-sub' key={index}>
-                     {subitem.name} 
+                  <li key={index}>
+                      <h5>
+                        <Button
+                            className='footer-nav-list-subitem'
+                            type='link'
+                            text={subitem.name}
+                            href={subitem.to} //не впевнена що лінк коректно додався
+                        />    
+                      </h5>
                </li>)}
           </ul>
-    </div>
+    </>
   )
 }
 
