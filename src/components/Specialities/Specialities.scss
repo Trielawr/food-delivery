@@ -1,3 +1,5 @@
+@import '../../styles/scss-variables.scss';
+
 .specialities {
     padding-top: 72px;
     margin-bottom: 72px;
@@ -13,14 +15,18 @@
             position: relative;
             margin-top: 2px;
             margin-bottom: 2px;
+            margin-right: -$gutter-width / 2;
+            margin-left: -$gutter-width / 2;
         }
 
         &-item {
-            box-shadow: 0 2px 16px rgba(60, 62, 74, 0.08);
-            padding-left: 12px;
-            padding-left: 12px;
+            padding: 12px;
             text-align: center;
             width: 136px;
+
+            &-inner {
+                box-shadow: 0 2px 16px 0 rgba(60, 62, 74, 0.08);
+            }
 
             svg {
                 margin-top: 24px;
@@ -47,12 +53,24 @@
     width: 48px;
     z-index: 20;
 
+    &:before {
+        display: none;
+    }
+
     &:focus {
         background-color: var(--primary-white);
     }
 
     &:hover {
         background-color: var(--secondary-super-light-gray);
+    }
+
+    &.slick-prev {
+        left: -$gutter-width / 2;
+    }
+
+    &.slick-next {
+        right: -$gutter-width / 2;
     }
 
     svg {

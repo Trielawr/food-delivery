@@ -61,11 +61,11 @@ export const footerData = [
         name: '69 avenue de la Republique 75011 Paris',
       },
       {
-        to: 'tel:0800 111 126',
+        to: "tel:+380800111126",
         name: '0800 111 126',
       },
       {
-        to: 'mail:contact@yellowkitchens.com',
+        to: 'mailto:contact@yellowkitchens.com',
         name: 'contact@yellowkitchens.com',
       },
     ]

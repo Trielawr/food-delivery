@@ -16,23 +16,17 @@ const FoodCourt = () => {
         <div className='benefits'>
           <div className='benefits-inner'>
             <ul>
-              <li>
-                <a href='#'  className='benefits-item'>
-                  <Icon iconname="time-eat" width={'48'} height={'48'} />
-                  <p style={{width: '182px'}}>delivery in all paris in less than 30 minutes</p>
-                </a>
+              <li className='benefits-item'>
+                <Icon iconname="time-eat" width={'48'} height={'48'} />
+                <span>delivery in all paris in less than 30 minutes</span>
               </li>
-              <li>
-                <a href='#'  className='benefits-item'>
-                  <Icon iconname="delivery" width={'48'} height={'48'} />
-                  <p style={{width: '124px'}}>Free delivery from 29 euros</p>
-                </a>
+              <li className='benefits-item'>
+                <Icon iconname="delivery" width={'48'} height={'48'} />
+                <span style={{width: '182'}}>Free delivery from 29 euros</span>
               </li>
-              <li>
-                <a href='#'  className='benefits-item'>
-                  <Icon iconname="paris" width={'48'} height={'48'} />
-                  <p style={{width: '172px'}}>Only fresh and French products</p>
-                </a>
+              <li className='benefits-item'>
+                <Icon iconname="paris" width={'48'} height={'48'} />
+                <span>Only fresh and French products</span>
               </li>
             </ul>
           </div>

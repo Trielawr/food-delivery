@@ -19,7 +19,7 @@ const Footer = () => {
              </a>
            </div>
          </nav>  
-          <div className='footer-nav-social'>
+          <div className='footer-nav-apps'>
             <a href='http://appstore.com/appstore' className='footer-nav-social-store'>
               <img src={AppleStore }  alt='AppleStore'/>
             </a>
@@ -30,14 +30,7 @@ const Footer = () => {
             <ul className='footer-nav-list'>
               {footerData.map((item, index) =>
                 <li key={index}>
-                  <h2>
-                    <Button
-                      className='footer-nav-list-itemtitle'
-                      type='link'
-                      text={item.title}
-                      href="#"
-                    />
-                </h2>
+                  <h5 className='footer-nav-list-itemstitle'>{item.title}</h5>
                   <FooterDataComponent item={ item.item }/>
                 </li>)}
             </ul>
@@ -69,9 +62,9 @@ const Footer = () => {
                   href="#"
               />
             </li>
-            <span>
+            <li>
               <p>© 2020 Yellow kitchen</p>
-            </span>
+            </li>
           </ul>
       </div>
       </div>

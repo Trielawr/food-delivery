@@ -77,6 +77,10 @@
     width: 48px;
     z-index: 20;
 
+    &:before {
+        display: none;
+    }
+
     &:focus {
         background-color: var(--primary-white);
     }

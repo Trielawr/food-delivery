@@ -2,24 +2,24 @@
 
 .foodcourt {
     padding-bottom: 48px;
-}
 
-.foodcourt-container{
+   &-container{
     background-image: url('./../../assets/Images/main-banner-bg.png');
     background-position: 100% 0;
     background-size: auto 100%;
     background-repeat: no-repeat;
-}
+   } 
 
-.foodcourt-section{
+   &-section{
     font-family: "Poppins", sans-serif;
     letter-spacing: 1.05px;
     padding-top: 100px;
     padding-bottom: 200px;
     font-weight: 300;
     font-size: 16px;
+   }
 
-    h1 {
+   h1 {
         text-shadow: 0 4px 4px rgba(0,0,0,0.25);
         line-height: 64px;
         max-width: 100%;
@@ -30,7 +30,7 @@
 
 .foodcourt-button-container {
     line-height: 20px;
-    margin-top: 100px;
+    margin-top: 100px;   
 }
 
 .foodcourt-button {
@@ -56,9 +56,9 @@
 
     &-inner {
         position: relative;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        padding-right: 20px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        padding-right: 24px;
     
         &::before {
             box-shadow: 0 8px 40px rgba(0,0,0,0.08);
@@ -74,17 +74,17 @@
     }
 
     &-item {
-        font-family: "Martel Sans", sans-serif;
         color: var(--secondary-dark-gray);
         text-decoration: none;
         line-height: 24px;
         letter-spacing: 0.5px;
         font-size: 16px;
-        display: flex;
+        display: inline-flex;
         gap: 16px;
         
-        p {
+        span {
             margin-bottom: 0;
+            width: 13em;
         }
     }
 

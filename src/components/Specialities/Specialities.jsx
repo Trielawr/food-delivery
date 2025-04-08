@@ -53,55 +53,66 @@ const Specialities = () => {
   return (
     <div className='specialities'>
       <div className='container'>
-       <div className='specialities-header'>
-        <h2>Specialities</h2>
-        <Button
-          className='gray-btn'
-          text='show all'
-        />
-      </div>
+        <div className='specialities-header'>
+          <h2>Specialities</h2>
+          <Button
+            className='gray-btn'
+            text='show all'
+          />
+        </div>
         <div className='specialities-body'>
-          {/* <div className="slider-container"> */}
-         <Slider {...settings}>
+          <Slider {...settings}>
             <div className='specialities-item'>
-              <div>
+              <div className='specialities-item-inner'>
                 <Icon className='specialities-item-icon' iconname="bagel" width={'48'} height={'48'} />
                 <p>Bagel</p>
               </div>
             </div>
             <div className='specialities-item'>
+              <div className='specialities-item-inner'>
                 <Icon iconname="burger" width={'48'} height={'48'}/>
                 <p>Burger</p>
+              </div>
             </div>
             <div className='specialities-item'>
+              <div className='specialities-item-inner'>
                 <Icon iconname="chicken" width={'48'} height={'48'}/>
                 <p>Chicken</p>
+              </div>
             </div>
             <div className='specialities-item'>
+              <div className='specialities-item-inner'>
                 <Icon iconname="fish" width={'48'} height={'48'}/>
                 <p>Fish</p>
+              </div>
             </div>
             <div className='specialities-item'>
+              <div className='specialities-item-inner'>
                 <Icon iconname="fishnchips" width={'48'} height={'48'}/>
                 <p>Fish’Chips</p>
+              </div>
             </div>
             <div className='specialities-item'>
+              <div className='specialities-item-inner'>
                 <Icon iconname="vegan" width={'48'} height={'48'}/>
                 <p>Vegan</p>
+              </div>
             </div>
-            <div className='specialities-item'>   
+            <div className='specialities-item'>
+              <div className='specialities-item-inner'>   
                 <Icon iconname="pizza" width={'48'} height={'48'}/>
                 <p>Pizza</p>      
+              </div>
             </div>
-            <div className='specialities-item'>    
+            <div className='specialities-item'>
+              <div className='specialities-item-inner'>    
                 <Icon iconname="raviolli" width={'48'} height={'48'}/>
                 <p>Pasta</p>          
+              </div>
             </div>
-          </Slider> 
-         {/* </div> */}
-      </div>       
+          </Slider>
+        </div>
       </div>
-
     </div>
   )
 }
