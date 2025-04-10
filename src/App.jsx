@@ -16,14 +16,14 @@ function App() {
       <Header />
       <main className='app-main-content'>
         <FoodCourt />
-        <Restaurants />
+        {/* <Restaurants />
         <NearestRestaurants />
         <Specialities />
         <Achievements />
         <Map />
-        <Socials /> 
+        <Socials />  */}
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

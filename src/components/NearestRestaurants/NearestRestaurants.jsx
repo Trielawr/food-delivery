@@ -4,14 +4,16 @@ import '../Button/Button.scss';
 import Button from '../Button/Button';
 import { useFormik } from "formik";
 import * as Yup from "yup";
+import { useState } from 'react';
 
 const NearestRestaurants = () => {
 
-  const onChangeForm =  () => {
-      const payload = {
-         email: formik.values.email
-      };
-      console.log('payload', payload);
+  const [adress, setAdress] = useState('');
+  const [disabled, setDisabled] = useState('false');
+  
+  const onChangeForm = () => {
+    setAdress('');
+    setDisabled('true');
   }
 
   const validationSchema = Yup.object({
@@ -23,12 +25,11 @@ const NearestRestaurants = () => {
   const formik = useFormik({
       enableReinitialize: true,
       initialValues: {
-          email: ""|| ""
+          email: adress || ""
           },
           validationSchema: validationSchema,
       onSubmit: () => {
         onChangeForm();
-        console.log('formik.values.adress', formik.values.email);
         formik.resetForm();
         }
       }     
@@ -50,12 +51,13 @@ const NearestRestaurants = () => {
               onBlur={formik.handleBlur}
               name= "email"
               type='email'
-              value={ formik.values.adress }
+              value={ formik.values.email }
               placeholder='Enter delivery adress' />
-            <Button
-              className='yellow-btn'
+              <Button
+                className='yellow-btn'
                 text='sent'
                 type='submit'
+                disabled={ formik.errors.email }
             />
              { (formik.errors.email && formik.touched.email) ? <p className='errors'>{ formik.errors.email } </p>: null }
           </form>

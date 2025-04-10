@@ -1,3 +1,5 @@
+@import './../../styles/scss-variables.scss';
+
 .app-header {
   border-bottom: 1px solid var(--secondary-gray);
   flex-shrink: 0;
@@ -18,6 +20,10 @@
   align-items: center;
   display: flex;
   gap: 48px;
+
+  @media screen and (max-width: $bp-tablet ) {
+    gap: 18px;
+    }
 
   &-item {
     transition: color 0.15s ease;
