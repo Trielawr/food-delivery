@@ -1,31 +1,46 @@
+@import './../../styles/scss-variables.scss';
+
 .footer {
    flex-shrink: 0;
    background-color: var(--secondary-dark-gray);
    padding: 48px;
    display: flex;
    justify-content: space-between;
-
-  &-nav {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-
-    &-logo {
-      border-bottom: 1px solid var(--secondary-light-gray);
-      height: 24px;
-      padding-bottom: 70px;
-      width: 296px;
-
-      &-icon {
-         width: 184px;
-         align-items: start; 
+   
+   &-nav {
+     display: flex;
+     justify-content: space-between;
+     position: relative;
+     
+     @media screen and (max-width: $bp-desktop) {
+        flex-direction: column;
       }
-    }
+       
+       &-logo {
+         border-bottom: 1px solid var(--secondary-light-gray);
+         height: 24px;
+         padding-bottom: 70px;
+         width: 296px;
 
-    &-apps {
-      position: absolute;
-      top: 121px;
-    }
+        @media screen and (max-width: $bp-desktop) {
+          padding-bottom: 100px;
+        }
+         
+         &-icon {
+           width: 184px;
+           align-items: start; 
+          }
+        }
+        
+        &-apps {
+          position: absolute;
+          top: 121px;
+          
+          @media screen and (max-width: $bp-desktop) {
+              top: 50px;
+           }
+         }
+
 
     &-list {
       color: var(--primary-white);
@@ -36,9 +51,17 @@
       list-style-type: none;
       gap: min(87px, 10%);
 
+      @media screen and (max-width: $bp-desktop) {
+         padding-top: 35px;
+        }
+
+      @media screen and (max-width: $bp-tablet) {
+        flex-direction: column;
+       }
+
       h5 {
-          margin-bottom: 24px;
-      }
+        margin-bottom: 24px;
+       }
 
       &-itemstitle {
         color: var(--primary-white);
@@ -46,7 +69,7 @@
         font-family: 'Poppins', sans-serif;
         font-weight: 600;
         font-size: 24px;
-      }
+       }
 
       &-itemlist{
         flex-direction: column;
@@ -86,12 +109,23 @@
     height: 24px;
     margin-top: 97px;
 
+    @media screen and (max-width: $bp-tablet) {
+      flex-direction: column;
+      margin-top: 30px;
+      height: 50px;
+    }
+
+
     &-social {
       flex-direction: row;
       display: flex;
       position: relative;
       top: -24px;
-      
+    
+      @media screen and (max-width: $bp-tablet) {
+        height: 50px;
+      }
+
       a {
         flex-direction: row;
         padding: 26px 24px 48px 0;
@@ -115,6 +149,10 @@
       font-size: 12px;
       color: var(--primary-white);
       list-style-type: none;
+      
+      @media screen and (max-width: $bp-tablet) {
+        padding-left: 0px;
+      }
 
       a {
         color: var(--primary-white);
@@ -126,5 +164,4 @@
       }
     }
   }
-
 }

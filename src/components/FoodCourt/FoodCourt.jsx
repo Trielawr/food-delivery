@@ -22,7 +22,7 @@ const FoodCourt = () => {
               </li>
               <li className='benefits-item'>
                 <Icon iconname="delivery" width={'48'} height={'48'} />
-                <span style={{width: '182'}}>Free delivery from 29 euros</span>
+                <span>Free delivery from 29 euros</span>
               </li>
               <li className='benefits-item'>
                 <Icon iconname="paris" width={'48'} height={'48'} />

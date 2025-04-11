@@ -1,3 +1,5 @@
+@import './../../styles/scss-variables.scss';
+
 .nearest-bg {
     background-color: var(--secondary-super-light-gray);
 }
@@ -8,8 +10,16 @@
     justify-content: space-between;
     align-items: center;
 
+    @media screen and (max-width: $bp-desktop) {
+            flex-direction: column;
+    }
      
     &-text {
+
+        @media screen and (max-width: $bp-tablet) {
+            text-align: center;
+            margin: 0 auto;
+        }
 
         &-logo {
             font-family: "Poppins", sans-serif;
@@ -26,7 +36,7 @@
             letter-spacing: 1.5px;
             font-size: 16px;
             color: var(--secondary-dark-gray);
-            width: 424px;
+            max-width: 424px;
         }
     }    
 
@@ -36,7 +46,11 @@
         font-size: 16px;
         letter-spacing: 0.5px;
         color: var(--secondary-gray);
-                    
+
+        @media screen and (max-width: $bp-tablet) {
+            font-size: 12px;
+            letter-spacing: 0.5px;
+        }
 
         &-input {
             box-shadow: 0 8px 40px rgba(0, 0, 0, 0.08);
@@ -45,6 +59,10 @@
             line-height: 24px;
             border: none;
             width: 320px ;
+        
+            @media screen and (max-width: $bp-tablet) {
+                width: 200px;
+            }
         }
 
         &-input::placeholder{

@@ -12,6 +12,10 @@
   align-items: center;
   padding-top: 12px;
   display: flex;
+
+  @media screen and (max-width: $bp-tablet) {
+    justify-content: space-around;
+  }
 }
 
 .header-nav {
@@ -21,15 +25,19 @@
   display: flex;
   gap: 48px;
 
-  @media screen and (max-width: $bp-tablet ) {
-    gap: 18px;
-    }
+  @media screen and (max-width: $bp-tablet) {
+      gap: 18px;
+  }
 
   &-item {
     transition: color 0.15s ease;
     color: var(--secondary-gray);
     display: flex;
     text-decoration: none;
+
+  @media screen and (max-width: $bp-mobile) {
+      display: none;
+  }
 
     &:hover {
       color: var(--secondary-dark-gray);

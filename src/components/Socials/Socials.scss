@@ -19,9 +19,19 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 79px;
-    margin-top: 20px;
+    padding: 20px 0;
     border: none;
-    
+    flex-wrap: wrap;
+
+    @media screen and (max-width: $bp-desktop) {
+      justify-content: space-around;
+    }
+  
+    &-img {
+    @media screen and (max-width: $bp-desktop) {
+      padding: 20px;
+    }
+    }
   }
 
   h3 {
