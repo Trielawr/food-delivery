@@ -3,7 +3,7 @@ import './NearestRestaurants.scss';
 import '../Button/Button.scss';
 import Button from '../Button/Button';
 import { useFormik } from "formik";
-import * as Yup from "yup";
+import { validationSchema } from '../../assets/utilits';
 import { useState } from 'react';
 
 const NearestRestaurants = () => {
@@ -15,12 +15,6 @@ const NearestRestaurants = () => {
     setAdress('');
     setDisabled('true');
   }
-
-  const validationSchema = Yup.object({
-      email: Yup.string()
-          .required("Не введена електроннаа адреса")
-          .email("Некоректна електронна адреса")
-  });
 
   const formik = useFormik({
       enableReinitialize: true,

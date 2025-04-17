@@ -1,29 +1,15 @@
 import './App.css';
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
-import FoodCourt from './components/FoodCourt/FoodCourt';
-import Socials from './components/Socials/Socials';
-import Achievements from './components/Achievements/Achievements';
-import Map from './components/Map/Map';
-import NearestRestaurants from './components/NearestRestaurants/NearestRestaurants';
-import Restaurants from './components/Restaurants/Restaurants';
-import Specialities from './components/Specialities/Specialities';
-
+import { routerData } from './data/webdata';
+import { RouterProvider } from 'react-router-dom';
+import { LoginContext } from './assets/utilits';
+import { useState } from 'react';
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <main className='app-main-content'>
-        <FoodCourt />
-        <Restaurants />
-        <NearestRestaurants />
-        <Specialities />
-        <Achievements />
-        <Map />
-        <Socials /> 
-      </main>
-      <Footer />
+      <LoginContext.Provider value= "false">
+          <RouterProvider router={routerData }/>
+      </LoginContext.Provider>
     </div>
   );
 }

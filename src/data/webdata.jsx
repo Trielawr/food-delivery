@@ -1,3 +1,86 @@
+import { createBrowserRouter } from 'react-router-dom';
+import { ROUTES } from '../assets/utilits';
+import { lazy } from 'react';
+
+const AllPages = lazy(() => import('../pages/AllPages/AllPages'));
+const ErrorPage = lazy(() => import('../pages/ErrorPage/ErrorPage'));
+const AchievementsPage = lazy(() => import('../pages/AchievementsPage/AchievementsPage'));
+const FoodCourtPage = lazy(() => import('../pages/FoodCourtPage/FoodCourtPage'));
+const MapPage = lazy(() => import('../pages/MapPage/MapPage'));
+const NotFoundPage = lazy(() => import('../pages/NotFoundPage/NotFoundPage'));
+const LoginPage = lazy(() => import('../pages/LoginPage/LoginPage'));
+const PrivateRoute = lazy(() => import('../pages/PrivateRoute/PrivateRoute'));
+const NearestRestaurantsPage = lazy(() => import('../pages/NearestRestaurantsPage/NearestRestaurantsPage'));
+const RestaurantsPage = lazy(() => import('../pages/RestaurantsPage/RestaurantsPage'));
+const SocialsPage = lazy(() => import('../pages/SocialsPage/SocialsPage'));
+const SpecialitiesPage = lazy(() => import('../pages/SpecialitiesPage/SpecialitiesPage'));
+const BascketPage= lazy(() => import('../pages/BascketPage/BascketPage'));
+const Layout = lazy(() => import('../pages/Layout/Layout'));
+
+export const routerData = createBrowserRouter([
+  {
+    path: ROUTES.home,
+    element: <Layout/>,
+    errorElement: <NotFoundPage />,
+    children: [
+      {
+        index: true,
+        element: <AllPages />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        index: ROUTES.foodcourt,
+        element: <FoodCourtPage />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: ROUTES.login,
+        element: <LoginPage />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: ROUTES.restaurants,
+        element: <RestaurantsPage />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: ROUTES.nearestrestaurants,
+        element: <NearestRestaurantsPage />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: ROUTES.specialities,
+        element: <SpecialitiesPage />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: ROUTES.achievements,
+        element: <AchievementsPage />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: ROUTES.map,
+        element: <MapPage />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: ROUTES.social,
+        element: <SocialsPage />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        element: <PrivateRoute children />,
+        children: [
+          {
+            path: ROUTES.bascket,
+            element:  <BascketPage />,
+          },
+        ]
+      },
+    ]
+  },
+])
+
 export const footerData = [
   {
     title: 'About us',
@@ -32,15 +115,15 @@ export const footerData = [
         name: 'Read FAQs',
       },
       {
-        to: '/contactspage',
+        to: ROUTES.restaurants,
         name: 'Restaurants',
       },
       {
-        to: '/contactspage',
+        to: ROUTES.specialities,
         name: 'Specialities',
       },
       {
-        to: '/contactspage',
+        to: ROUTES.login,
         name: 'Sign up to deliver',
       },
       {
