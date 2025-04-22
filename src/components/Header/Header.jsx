@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import MainLogo from './../../assets/svg/logo.svg';
 import Icon from '../Icon/Icon';
 import '../Header/Header.scss';
 import { NavLink } from 'react-router-dom';
-import { ROUTES } from '../../assets/utilits';
+import { LoginContext, ROUTES } from '../../assets/utilits';
 
 const Header = () => {
+
+  const { login } = useContext(LoginContext);
+  console.log(" Header login",login)
+
   return (
     <div className='app-header'>
       <div className='container'>
@@ -21,10 +25,15 @@ const Header = () => {
                 height={'24'} />
               <span>Log in</span>
           </NavLink>
+          {(!login)?  
+          <NavLink to={ROUTES.login} className='header-nav-item'>
+            <Icon iconname="cart" width={'24'} height={'24'}/>
+            <span>0</span>
+          </NavLink> :
           <NavLink to={ROUTES.bascket} className='header-nav-item'>
             <Icon iconname="cart" width={'24'} height={'24'}/>
             <span>0</span>
-          </NavLink>
+          </NavLink>}
           <button type='button' className='header-menu-btn'></button>
         </nav>
         </div>

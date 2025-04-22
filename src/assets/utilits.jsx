@@ -20,4 +20,9 @@ export const ROUTES = {
     bascket: "bascket"
 };
 
-export const LoginContext = createContext(null);
+
+const InitialLogin = {
+    login: "false",
+    onLogin: function () {},
+}
+export const LoginContext = createContext(InitialLogin);

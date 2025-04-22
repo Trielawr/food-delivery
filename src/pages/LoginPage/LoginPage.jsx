@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext} from 'react';
 import '../LoginPage/LoginPage.scss';
 import { LoginContext, ROUTES } from '../../assets/utilits';
 import { NavLink } from 'react-router-dom';
@@ -6,8 +6,9 @@ import Button from '../../components/Button/Button';
 
 const LoginPage = () => {
 
-    const login = useContext(LoginContext);
-    console.log("login",login)
+    const { login, onLogin } = useContext(LoginContext);
+
+    console.log("login", login);
     
   return (
       <div>
@@ -25,8 +26,10 @@ const LoginPage = () => {
                     className='yellow-btn'
                     text='Sign in'
                     type='submit'
+                    onClick={ ()=> onLogin()}
                   />
-              </div>}
+              </div>
+          }
     </div>
   )
 }

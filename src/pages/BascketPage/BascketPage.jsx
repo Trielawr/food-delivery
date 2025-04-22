@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { LoginContext, ROUTES } from '../../assets/utilits';
+import { Navigate, NavLink } from 'react-router-dom';
+import Bascket from '../../components/Bascket/Bascket';
 
 
 const BascketPage = () => {
+
+    const {login} = useContext(LoginContext);
+    console.log("Bascket login", login);
+
   return (
-    <div>
-        BascketPage  
+      <div>
+          {(!login) ? <NavLink to={ROUTES.login} /> : <Bascket/> }
     </div>
   )
 }
