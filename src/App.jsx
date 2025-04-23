@@ -7,10 +7,10 @@ import { useState } from 'react';
 
 function App() {
   
-  const [login, setLogin] = useState("false");
+  const [login, setLogin] = useState(false);
   const onLogin = () => {
-    setLogin("true");
- }
+    setLogin(true);
+  }
 
   return (
     <div className="App">

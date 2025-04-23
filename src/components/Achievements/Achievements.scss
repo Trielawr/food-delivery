@@ -10,17 +10,17 @@
 
  
     &-wrapper {
-       display: flex;
-       align-items: stretch;
-       text-align: center;
-       margin-bottom: 0;
-       padding-left: 0;
-       list-style-type: none;
-       flex-wrap: wrap;
-       margin-right: -$gutter-width / 2;
-       margin-left: -$gutter-width / 2;
+        display: flex;
+        align-items: stretch;
+        text-align: center;
+        margin-bottom: 0;
+        padding-left: 0;
+        list-style-type: none;
+        flex-wrap: wrap;
+        margin-right: -$gutter-width / 2;
+        margin-left: -$gutter-width / 2;
 
-       @media screen and (max-width: $bp-tablet) {
+        @media screen and (max-width: $bp-tablet) {
             flex-direction: column;
             align-items: center;
         }
@@ -46,9 +46,9 @@
             display: flex;
 
             span {
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 700;
-            font-size: 58px;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 700;
+                font-size: 58px;
             }
         }
 

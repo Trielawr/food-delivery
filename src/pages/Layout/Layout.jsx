@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Header from '../../components/Header/Header';
 import { Outlet } from 'react-router-dom';
 import Footer from '../../components/Footer/Footer';
+import { LoginContext } from '../../assets/utilits';
 
 const Layout = () => {
+
+  const login = useContext(LoginContext);
+  
   return (
     <div>
       <header>

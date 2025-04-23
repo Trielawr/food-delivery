@@ -1,7 +1,16 @@
 $gutter-width: 30px;
 
-$container-width-xl: 1256px + $gutter-width;
+$container-width-large-desktop: 1256px + $gutter-width;
+$container-width-desktop: 950px + $gutter-width;
+$container-width-laptop: 720px + $gutter-width;
+$container-width-tablet: 100%;
 
-$bp-desktop: 1100px;
+$bp-desktop: 1336px;
+$bp-laptop: 1024px;
+$bp-tablet: 768px;
 $bp-mobile: 480px;
-$bp-tablet: 780px;
+
+$bp-large-desktop-min: $bp-desktop + 1px;
+$bp-desktop-min: $bp-laptop + 1px;
+$bp-laptop-min: $bp-tablet + 1px;
+$bp-tablet-min: $bp-mobile + 1px;

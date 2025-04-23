@@ -9,20 +9,21 @@ import { createContext } from "react";
     
 export const ROUTES = {
     home: "/",
-    achievements: "achievements",
-    foodcourt: "foodcourt",
-    map: "map",
-    nearestrestaurants: "nearestrestaurants",
-    restaurants: "restaurants",
-    specialities: "specialities",
+    achievements: "/achievements",
+    foodcourt: "/foodcourt",
+    map: "/map",
+    nearestrestaurants: "/nearestrestaurants",
+    restaurants: "/restaurants",
+    specialities: "/specialities",
+    login: "/login",
+    bascket: "/bascket",
     notfoundpage: "*",
-    login: "login",
-    bascket: "bascket"
 };
 
 
 const InitialLogin = {
-    login: "false",
-    onLogin: function () {},
-}
+    login: false,
+    onLogin: function () { },
+};
+
 export const LoginContext = createContext(InitialLogin);

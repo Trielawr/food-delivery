@@ -1,115 +1,120 @@
-@import './../../styles/scss-variables.scss';
+@import "./../../styles/scss-variables.scss";
 
 .restaurans {
-    padding-bottom: 72px;
+  padding-bottom: 72px;
 
-    &-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        margin-bottom: 48px;
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 48px;
 
-        @media screen and (max-width: $bp-tablet) {
-            justify-content: space-around;
-        }
+    @media screen and (max-width: $bp-tablet) {
+      justify-content: space-around;
+    }
+  }
+
+  &-body {
+    margin-right: -12px;
+    margin-left: -12px;
+    position: relative;
+
+    &::before,
+    &::after {
+      display: block;
+      content: "";
+      position: absolute;
+      z-index: 10;
+      pointer-events: none;
+      top: 0px;
+      bottom: 0;
+      width: 12px;
     }
 
-    &-body {
-        margin-right: -12px;
-        margin-left: -12px;
-        position: relative;
-
-        &::before,
-        &::after {
-            display: block;
-            content: '';
-            position: absolute;
-            z-index: 10;
-            pointer-events: none;
-            top: 0px;
-            bottom: 0;
-            width: 12px;
-        }
-
-        &:before {
-            left: 0;
-            background: rgb(255, 255, 255);
-            background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
-        }
-        
-        &:after {
-            right: 0;
-            background: rgb(255, 255, 255);
-            background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
-        }
+    &:before {
+      left: 0;
+      background: rgb(255, 255, 255);
+      background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
     }
 
-    &-item {
-        padding-left: 12px;
-        padding-right: 12px;
+    &:after {
+      right: 0;
+      background: rgb(255, 255, 255);
+      background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 1) 100%
+      );
+    }
+  }
 
-        &-photo {
-            padding-bottom: 62%;
-            box-shadow: 0 2px 16px rgba(60, 62, 74, 0.08);
-                          border-radius: 4px;
-        }
+  &-item {
+    padding-left: 12px;
+    padding-right: 12px;
 
-        &-logo {
-            display: flex;
-            height: 112px;
-            justify-content: center;
-            align-items: center;
-            box-shadow: 0 2px 16px rgba(60, 62, 74, 0.08);
-
-            img {
-              display: block; 
-              max-width: 100%; 
-              max-height: 100%;
-            }
-        }
-    
+    &-photo {
+      padding-bottom: 62%;
+      box-shadow: 0 2px 16px rgba(60, 62, 74, 0.08);
+      border-radius: 4px;
     }
 
+    &-logo {
+      display: flex;
+      height: 112px;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 2px 16px rgba(60, 62, 74, 0.08);
+
+      img {
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+  }
 }
 
 .slick-arrow {
-    transition: background-color 0.3s ease;
-    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.08);
+  transition: background-color 0.3s ease;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.08);
+  background-color: var(--primary-white);
+  border-radius: 50%;
+  display: block;
+  border: none;
+  height: 48px;
+  width: 48px;
+  z-index: 20;
+
+  &:before {
+    display: none;
+  }
+
+  &:focus {
     background-color: var(--primary-white);
-    border-radius: 50%;
+  }
+
+  &,
+  svg:hover {
+    background-color: var(--secondary-super-light-gray);
+  }
+
+  svg {
+    position: absolute;
     display: block;
-    border: none;
-    height: 48px;
-    width: 48px;
-    z-index: 20;
-
-    &:before {
-        display: none;
-    }
-
-    &:focus {
-        background-color: var(--primary-white);
-    }
-
-    &,
-    svg:hover {
-        background-color: var(--secondary-super-light-gray);
-    }
-
-    svg {
-        position: absolute;
-        display: block;
-        margin: auto;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        top: 0;
-    }
+    margin: auto;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+  }
 }
 
-
 .slick-next {
-    svg {
-        transform: rotate(180deg);
-    }
+  svg {
+    transform: rotate(180deg);
+  }
 }

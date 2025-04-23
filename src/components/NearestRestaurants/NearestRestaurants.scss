@@ -1,82 +1,81 @@
-@import './../../styles/scss-variables.scss';
+@import "./../../styles/scss-variables.scss";
 
 .nearest-bg {
-    background-color: var(--secondary-super-light-gray);
+  background-color: var(--secondary-super-light-gray);
 }
 
 .nearest {
-    display: flex;
-    padding: 80px 74px;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  padding: 80px 74px;
+  justify-content: space-between;
+  align-items: center;
 
-    @media screen and (max-width: $bp-desktop) {
-            flex-direction: column;
+  @media screen and (max-width: $bp-desktop) {
+    flex-direction: column;
+  }
+
+  &-text {
+    @media screen and (max-width: $bp-tablet) {
+      text-align: center;
+      margin: 0 auto;
     }
-     
-    &-text {
 
-        @media screen and (max-width: $bp-tablet) {
-            text-align: center;
-            margin: 0 auto;
-        }
+    &-logo {
+      font-family: "Poppins", sans-serif;
+      text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+      letter-spacing: 1.8px;
+      line-height: 64px;
+      font-size: 36px;
+      color: var(--secondary-dark-gray);
+      margin-bottom: 24px;
+    }
 
-        &-logo {
-            font-family: "Poppins", sans-serif;
-            text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-            letter-spacing: 1.8px;
-            line-height: 64px;
-            font-size: 36px;
-            color: var(--secondary-dark-gray);
-            margin-bottom: 24px;
-        }
+    &-item {
+      font-family: "Martel Sans", sans-serif;
+      letter-spacing: 1.5px;
+      font-size: 16px;
+      color: var(--secondary-dark-gray);
+      max-width: 424px;
+    }
+  }
 
-        &-item {
-            font-family: "Martel Sans", sans-serif;
-            letter-spacing: 1.5px;
-            font-size: 16px;
-            color: var(--secondary-dark-gray);
-            max-width: 424px;
-        }
-    }    
+  &-adress {
+    flex-shrink: 0;
+    font-family: "Martel Sans", sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    color: var(--secondary-gray);
 
-    &-adress {
-        flex-shrink: 0;
-        font-family: "Martel Sans", sans-serif;
-        font-size: 16px;
-        letter-spacing: 0.5px;
-        color: var(--secondary-gray);
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 12px;
+      letter-spacing: 0.5px;
+    }
 
-        @media screen and (max-width: $bp-tablet) {
-            font-size: 12px;
-            letter-spacing: 0.5px;
-        }
+    &-input {
+      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.08);
+      border-radius: 6px;
+      padding: 24px 16px;
+      line-height: 24px;
+      border: none;
+      width: 320px;
 
-        &-input {
-            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.08);
-            border-radius: 6px;
-            padding: 24px 16px;
-            line-height: 24px;
-            border: none;
-            width: 320px ;
-        
-            @media screen and (max-width: $bp-tablet) {
-                width: 200px;
-            }
-        }
+      @media screen and (max-width: $bp-tablet) {
+        width: 200px;
+      }
+    }
 
-        &-input::placeholder{
-            background-image: url(/assets/svg/location.svg);
-            background-repeat: no-repeat;
-            background-color: transparent;
-            position: relative;
-            padding-left: 32px;
-        }
-    }   
+    &-input::placeholder {
+      background-image: url(/assets/svg/location.svg);
+      background-repeat: no-repeat;
+      background-color: transparent;
+      position: relative;
+      padding-left: 32px;
+    }
+  }
 }
 
 .errors {
-      margin-top: 20px;
-      color: red;
-      position: absolute;
+  margin-top: 20px;
+  color: red;
+  position: absolute;
 }

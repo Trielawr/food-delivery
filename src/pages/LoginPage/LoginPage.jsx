@@ -6,30 +6,28 @@ import Button from '../../components/Button/Button';
 
 const LoginPage = () => {
 
-    const { login, onLogin } = useContext(LoginContext);
-
-    console.log("login", login);
-    
+  const { login, onLogin } = useContext(LoginContext);
+  
   return (
-      <div>
-          {(!login) ? <NavLink to={ROUTES.home}/> :
-              <div className='login'>
-                <div className='login-data'>
-                  <label htmlFor="">Login</label>
-                  <input type="text" />
-                </div>
-                <div className="login-data">
-                    <label>Password</label>
-                    <input type="text" /> 
-                </div>
-                  <Button
-                    className='yellow-btn'
-                    text='Sign in'
-                    type='submit'
-                    onClick={ ()=> onLogin()}
-                  />
-              </div>
-          }
+    <div>
+      {(login) ? <NavLink to={ROUTES.home}/> :
+        <div className='login'>
+          <div className='login-data'>
+            <label htmlFor="">Login</label>
+            <input type="text" />
+          </div>
+          <div className="login-data">
+            <label>Password</label>
+            <input type="text" /> 
+          </div>
+          <Button
+            className='yellow-btn'
+            text='Sign in'
+            type='submit'
+            onClick={ ()=> onLogin()}
+          />
+        </div>
+      }
     </div>
   )
 }

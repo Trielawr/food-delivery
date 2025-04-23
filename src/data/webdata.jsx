@@ -20,7 +20,7 @@ const Layout = lazy(() => import('../pages/Layout/Layout'));
 export const routerData = createBrowserRouter([
   {
     path: ROUTES.home,
-    element: <Layout/>,
+    element: <Layout />,
     errorElement: <NotFoundPage />,
     children: [
       {
@@ -73,18 +73,18 @@ export const routerData = createBrowserRouter([
         children: [
           {
             path: ROUTES.bascket,
-            element:  <BascketPage />,
+            element: <BascketPage />,
           },
         ]
       },
     ]
   },
-])
+]);
 
 export const footerData = [
   {
     title: 'About us',
-    item : [
+    item: [
       {
         to: '/concept',
         name: 'Concept',
@@ -109,7 +109,7 @@ export const footerData = [
   },
   {
     title: 'Get help',
-    item : [
+    item: [
       {
         to: '/aboutuspage',
         name: 'Read FAQs',
@@ -134,7 +134,7 @@ export const footerData = [
   },
   {
     title: 'Contact us',
-    item : [
+    item: [
       {
         to: '/categorypage',
         name: 'ROAD Yellow kitchen Paris 11',
@@ -153,4 +153,4 @@ export const footerData = [
       },
     ]
   },
-]
+];

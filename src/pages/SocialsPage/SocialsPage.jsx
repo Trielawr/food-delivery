@@ -1,8 +1,11 @@
 import React from 'react'
+import Socials from '../../components/Socials/Socials';
 
 const SocialsPage = () => {
   return (
-    <div>SocialsPage</div>
+    <div>
+        <Socials/>  
+    </div>
   )
 }
 

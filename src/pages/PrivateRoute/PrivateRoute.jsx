@@ -5,11 +5,16 @@ import { ROUTES } from '../../assets/utilits';
 
 const PrivateRoute = () => {
 
-    const {login} = useContext(LoginContext);
+    const { login } = useContext(LoginContext);
+    console.log('PrivateRoute: login =', login);
+    console.log('PrivateRoute: !login =', !login);
    
     if (!login) {
-       return <Navigate to={ROUTES.login} replace={true} /> 
+        console.log('PrivateRoute: if!');
+        return <Navigate to={ROUTES.login} replace={true} /> 
     }
+
+    console.log('PrivateRoute: else!');
     return <Outlet/>
     
 }

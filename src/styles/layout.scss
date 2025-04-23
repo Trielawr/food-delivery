@@ -4,6 +4,18 @@
     max-width: 100%;
     padding-right: $gutter-width / 2;
     padding-left: $gutter-width / 2;
-    width: $container-width-xl;
+    width: $container-width-large-desktop;
     margin: 0 auto;
+
+    @media (max-width: $bp-desktop) {
+        width: $container-width-desktop;
+    }
+
+    @media (max-width: $bp-laptop) {
+        width: $container-width-laptop;
+    }
+
+    @media (max-width: $bp-tablet) {
+        width: $container-width-tablet;
+    }
 }
