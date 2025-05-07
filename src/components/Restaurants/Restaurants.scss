@@ -6,12 +6,8 @@
   &-header {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     margin-bottom: 48px;
-
-    @media screen and (max-width: $bp-tablet) {
-      justify-content: space-around;
-    }
   }
 
   &-body {

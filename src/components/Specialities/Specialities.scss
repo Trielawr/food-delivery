@@ -11,7 +11,7 @@
     margin-bottom: 48px;
 
     @media screen and (max-width: $bp-tablet) {
-      justify-content: space-around;
+      align-items: center;
     }
   }
 
@@ -70,10 +70,18 @@
 
   &.slick-prev {
     left: -$gutter-width / 2;
+
+    @media screen and (max-width: $bp-tablet) {
+      left: 0;
+    }
   }
 
   &.slick-next {
     right: -$gutter-width / 2;
+
+    @media screen and (max-width: $bp-tablet) {
+      right: 0;
+    }
   }
 
   svg {

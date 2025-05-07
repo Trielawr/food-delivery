@@ -17,19 +17,28 @@
   &-photo {
     position: static;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 79px;
     padding: 20px 0;
     border: none;
     flex-wrap: wrap;
 
-    @media screen and (max-width: $bp-desktop) {
-      justify-content: space-around;
-    }
-
     &-img {
       @media screen and (max-width: $bp-desktop) {
         padding: 20px;
+        flex-wrap: wrap;
+      }
+
+      @media screen and (max-width: $bp-tablet) {
+        transform: scale(0.6);
+        margin: -65px; //Не розумію де виліз відступ
+        flex-wrap: wrap;
+      }
+
+      @media screen and (max-width: $bp-mobile) {
+        transform: scale(0.35);
+        margin: -100px; //Не розумію де виліз відступ
+        flex-wrap: wrap;
       }
     }
   }

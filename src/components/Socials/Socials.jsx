@@ -16,13 +16,13 @@ const Socials = () => {
         </h3>
         <div className='social-photo'>
           <Button
-            className='social-photo-img'
+            className='social-photo-img '
             type='link'
             href="#"
             text={<img src={Rectangle_1} alt='kitchen_1'></img>}
           />
           <Button
-            className='social-photo-img'
+            className='social-photo-img '
             type='link'
             href="#"
             text={<img src={Rectangle_2} alt='kitchen_2'></img>}

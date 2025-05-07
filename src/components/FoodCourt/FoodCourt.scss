@@ -1,25 +1,25 @@
-@import './../../styles/scss-variables.scss';
+@import "./../../styles/scss-variables.scss";
 
 .foodcourt {
-    padding-bottom: 48px;
+  padding-bottom: 48px;
 
-   &-container{
-    background-image: url('./../../assets/Images/main-banner-bg.png');
+  &-container {
+    background-image: url("./../../assets/Images/main-banner-bg.png");
     background-position: 100% 0;
     background-size: auto 100%;
     background-repeat: no-repeat;
 
-    @media screen and (max-width: $bp-desktop){
-        background-size: auto 80%;
+    @media screen and (max-width: $bp-desktop) {
+      background-size: auto 80%;
     }
 
     @media screen and (max-width: $bp-tablet) {
-        background-size: auto 55%;
+      background-size: auto 55%;
+      background-position: center 0;
     }
+  }
 
-    } 
-
-   &-section {
+  &-section {
     font-family: "Poppins", sans-serif;
     letter-spacing: 1.05px;
     padding-top: 100px;
@@ -27,138 +27,135 @@
     font-weight: 300;
     font-size: 16px;
 
-    @media screen and (max-width: $bp-desktop ) {
-        padding-bottom: 50px;
-    } 
-   }
+    @media screen and (max-width: $bp-desktop) {
+      padding-bottom: 50px;
+    }
+  }
 
-   h1 {
-        text-shadow: 0 4px 4px rgba(0,0,0,0.25);
-        line-height: 64px;
-        max-width: 100%;
-        font-size: 58px;
-        width: 535px;
-    
-        @media screen and (max-width: $bp-desktop ) {
-           text-align: center;
-           font-size: 58px;
-           width: 400px;
-        }
+  h1 {
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    line-height: 64px;
+    max-width: 100%;
+    font-size: 58px;
+    width: 535px;
 
-        @media screen and (max-width: $bp-tablet ) {
-            text-align: center;
-            font-size: 58px;
-            width: 400px;
-            border: 1px solid var(--black);
-            background-color: var(--primary-white);
-            border-radius: 5px;
-            opacity: 90%;
-            margin: 0 auto;
-        }
+    @media screen and (max-width: $bp-desktop) {
+      text-align: center;
+      font-size: 48px;
+      width: 300px;
     }
 
+    @media screen and (max-width: $bp-tablet) {
+      text-align: center;
+      font-size: 40px;
+      width: 300px;
+      border: 1px solid var(--black);
+      background-color: var(--primary-white);
+      border-radius: 5px;
+      opacity: 90%;
+      margin: 0 auto;
+    }
+  }
 }
 
 .foodcourt-button-container {
-    line-height: 20px;
-    margin-top: 100px;  
-    
-    @media screen and (max-width: $bp-tablet ) {
-        text-align: center;
-    }
+  line-height: 20px;
+  margin-top: 100px;
+
+  @media screen and (max-width: $bp-tablet) {
+    text-align: center;
+  }
 }
 
 .foodcourt-button {
-    padding: 16px 24px;
-    font-family: "Martel Sans", sans-serif;
-    font-size: 12px;
-    border: solid 2px var(--primary-yellow);
-    background-color: transparent;
-    border-radius: 4px;
+  padding: 16px 24px;
+  font-family: "Martel Sans", sans-serif;
+  font-size: 12px;
+  border: solid 2px var(--primary-yellow);
+  background-color: transparent;
+  border-radius: 4px;
 
-    &:not(:first-child) {
-        margin-left: 20px;
-    }
+  &:not(:first-child) {
+    margin-left: 20px;
+  }
 
-    b {
-        font-size: 16px;
-        display: block;
-    }
+  b {
+    font-size: 16px;
+    display: block;
+  }
 
-    @media screen and (max-width: $bp-tablet ) {
-        background-color: var(--primary-white);
-        border-radius: 5px;
-        opacity: 90%;
-
-    }
+  @media screen and (max-width: $bp-tablet) {
+    background-color: var(--primary-white);
+    border-radius: 5px;
+    opacity: 90%;
+  }
 }
 
 .benefits {
+  display: inline-flex;
+
+  &-inner {
+    position: relative;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-right: 24px;
+
+    &::before {
+      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.08);
+      background-color: var(--primary-white);
+      position: absolute;
+      display: block;
+      width: 100vw;
+      content: "";
+      bottom: 0;
+      right: 0;
+      top: 0;
+
+      @media screen and (max-width: $bp-tablet) {
+        display: none;
+      }
+    }
+  }
+
+  &-item {
+    color: var(--secondary-dark-gray);
+    text-decoration: none;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+    display: inline-flex;
+    gap: 16px;
+    flex-basis: auto;
+
+    span {
+      margin-bottom: 0;
+      width: 50%;
+    }
+
+    @media screen and (max-width: $bp-tablet) {
+      padding: 20px;
+    }
+  }
+
+  ul {
+    position: relative;
+    list-style-type: none;
     display: flex;
+    margin-bottom: 0;
+    padding-left: 0;
 
-    &-inner {
-        position: relative;
-        padding-top: 24px;
-        padding-bottom: 24px;
-        padding-right: 24px;
-    
-        &::before {
-            box-shadow: 0 8px 40px rgba(0,0,0,0.08);
-            background-color: var(--primary-white);
-            position: absolute;
-            display: block;
-            width: 100vw;
-            content: '';    
-            bottom: 0;
-            right: 0;
-            top: 0;
-        
-            @media screen and (max-width: $bp-tablet ) {
-              display: none;
-            }
-        }
-
+    @media screen and (max-width: $bp-tablet) {
+      flex-direction: column;
+      background-color: var(--primary-white);
+      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.08);
+      border-radius: 10px;
+      left: $gutter-width;
     }
+  }
 
-    &-item {
-        color: var(--secondary-dark-gray);
-        text-decoration: none;
-        line-height: 24px;
-        letter-spacing: 0.5px;
-        font-size: 16px;
-        display: inline-flex;
-        gap: 16px;
-        
-        span {
-            margin-bottom: 0;
-            width: 13em;
-        }
-                
-        @media screen and (max-width: $bp-tablet ) {
-            padding: 20px;
-        }
-
-    }
-
-    ul {
-        position: relative;
-        list-style-type: none;
-        display: flex;
-        margin-bottom: 0;
-        padding-left: 0;
-
-        @media screen and (max-width: $bp-tablet ) {
-           flex-direction: column;
-           background-color: var(--primary-white);
-           box-shadow: 0 8px 40px rgba(0, 0, 0, 0.08);
-           border-radius: 10px;   
-           left: $gutter-width;     
-        }
-    }
-
-    @media screen and (max-width: $bp-desktop ) {
-        position: relative;
-        margin: 0 auto;
-        justify-content: center;
-    }
+  @media screen and (max-width: $bp-desktop) {
+    position: relative;
+    margin: 0 auto;
+    justify-content: center;
+  }
 }

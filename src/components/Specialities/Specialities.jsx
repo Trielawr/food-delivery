@@ -50,7 +50,7 @@ const Specialities = () => {
         {
           breakpoint: 1100,
           settings: {
-            slidesToShow: 6,
+            slidesToShow: 5,
             slidesToScroll: 1,
             infinite: true,
           }
@@ -65,7 +65,7 @@ const Specialities = () => {
         {
           breakpoint: 480,
           settings: {
-            slidesToShow: 3,
+            slidesToShow: 2,
             slidesToScroll: 1,
           }
         }
