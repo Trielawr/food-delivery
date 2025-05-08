@@ -8,6 +8,11 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 48px;
+
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 15px;
+      justify-content: space-around;
+    }
   }
 
   &-body {

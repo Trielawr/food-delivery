@@ -10,10 +10,10 @@ const Socials = () => {
   return (
     <div className='social'>
       <div className='container'>
-        <h3 className='social-logo'>
+        <h2 className='social-logo'>
           <a href='https://www.instagram.com/' >#YellowKitchens </a>
           in instagram
-        </h3>
+        </h2>
         <div className='social-photo'>
           <Button
             className='social-photo-img '
