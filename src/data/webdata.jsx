@@ -86,22 +86,27 @@ export const footerData = [
     title: 'About us',
     item: [
       {
+        type: 'link',
         to: '/concept',
         name: 'Concept',
       },
       {
         to: '/franchise',
+        type: 'link',
         name: 'Franchise',
       },
       {
+        type: 'link',
         to: '/business',
         name: 'Business',
       },
       {
+        type: 'link',
         to: '/signup',
         name: 'Restaurant signup',
       },
       {
+        type: 'link',
         to: '/forinvestors',
         name: 'For Investors',
       },
@@ -111,22 +116,27 @@ export const footerData = [
     title: 'Get help',
     item: [
       {
+        type: 'link',
         to: '/aboutuspage',
         name: 'Read FAQs',
       },
       {
+        type: 'link',
         to: ROUTES.restaurants,
         name: 'Restaurants',
       },
       {
+        type: 'link',
         to: ROUTES.specialities,
         name: 'Specialities',
       },
       {
+        type: 'link',
         to: ROUTES.login,
         name: 'Sign up to deliver',
       },
       {
+        type: 'link',
         to: '/contactspage',
         name: 'English',
       },
@@ -136,18 +146,22 @@ export const footerData = [
     title: 'Contact us',
     item: [
       {
-        to: '/categorypage',
+        type: 'text',
+        to: '',
         name: 'ROAD Yellow kitchen Paris 11',
       },
       {
-        to: '/categorypage',
+        type: 'text',
+        to: '',
         name: '69 avenue de la Republique 75011 Paris',
       },
       {
+        type: 'link',
         to: "tel:+380800111126",
         name: '0800 111 126',
       },
       {
+        type: 'link',
         to: 'mailto:contact@yellowkitchens.com',
         name: 'contact@yellowkitchens.com',
       },

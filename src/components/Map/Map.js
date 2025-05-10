@@ -1,16 +1,68 @@
 import React from 'react';
+import { GoogleMap, Marker, useJsApiLoader } from '@react-google-maps/api'
 import '../Map/Map.scss';
 
+const containerStyle = {
+  width: '100%',
+  height: '600px',
+};
+
+const center = {
+  lat: 48.863635,
+  lng: 2.314826,
+};
+
+const markers = [
+  {lat: 48.861, lng: 2.316},
+  {lat: 48.869, lng: 2.311},
+  {lat: 48.865, lng: 2.318}
+];
 
 const Map = () => {
+  const { isLoaded } = useJsApiLoader({
+    id: 'google-map-script',
+    googleMapsApiKey: '',
+  });
+
+  const [map, setMap] = React.useState(null);
+
+  const onLoad = React.useCallback(function callback(map) {
+    const bounds = new window.google.maps.LatLngBounds(center);
+
+    markers.forEach(marker => {
+      bounds.extend(marker);
+    });
+    map.fitBounds(bounds);
+
+    setMap(map);
+  }, []);
+
+  const onUnmount = React.useCallback(function callback(map) {
+    setMap(null)
+  }, []);
+
+
   return (
     <div className='map'>
       <div className='container'>
         <div className='map-section'>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d96971.67964845686!2d2.3094420192440874!3d48.89840057670138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1742937840012!5m2!1suk!2sua"
-          width="100%" height="600"  allowfullscreen=""
-          loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-        </iframe>    
+          {
+            isLoaded ? (
+              <GoogleMap
+                mapContainerStyle={containerStyle}
+                center={center}
+                zoom={14}
+                onLoad={onLoad}
+                onUnmount={onUnmount}
+              >
+                {
+                  markers.map((marker, i) => <Marker key={i} position={marker} />)
+                }
+              </GoogleMap>
+            ) : (
+              <></>
+            )
+          }
         </div>
       </div>
     </div>
