@@ -82,9 +82,8 @@
 
       &-itemlist {
         flex-direction: column;
-        list-style-type: none;
 
-        h5 {
+        li {
           padding-top: 16px;
           margin-block-end: 0px;
           position: relative;
@@ -100,7 +99,12 @@
       }
 
       &-subitem {
-        color: var(--primary-white);
+        color: var(--secondary-light-gray);
+        text-decoration: none;
+
+        &:hover {
+          color: var(--primary-white);
+        }
       }
 
       ul {
@@ -138,10 +142,10 @@
       a {
         flex-direction: row;
         padding: 26px 24px 48px 0;
-        color: white;
+        color: var(--secondary-light-gray);
 
         &:hover {
-          color: #0a58ca;
+          color: var(--primary-white);
         }
       }
     }
@@ -165,12 +169,12 @@
       }
 
       a {
-        color: var(--primary-white);
+        color: var(--secondary-light-gray);
         font-weight: 700;
-      }
 
-      a:hover {
-        color: #0d6efd;
+        &:hover {
+          color: var(--primary-white);
+        }
       }
 
       li {
@@ -179,5 +183,24 @@
         }
       }
     }
+  }
+
+  .btn-primary {
+    --bs-btn-color: var(--secondary-light-gray);
+    --bs-btn-bg: transparent;
+    --bs-btn-border-color: transparent;
+    --bs-btn-hover-bg: transparent;
+    --bs-btn-hover-border-color: transparent;
+    --bs-btn-active-bg: transparent;
+    --bs-btn-active-border-color: transparent;
+    padding-left: 0px;
+    padding-top: 0px;
+    border: 0px;
+  }
+
+  .dropdown-menu {
+    --bs-dropdown-bg: var(--secondary-gray);
+    --bs-dropdown-link-hover-bg: var(--secondary-light-gray);
+    --bs-dropdown-link-active-bg: var(--secondary-dark-gray);
   }
 }

@@ -136,8 +136,8 @@ export const footerData = [
         name: 'Sign up to deliver',
       },
       {
-        type: 'link',
-        to: '/contactspage',
+        type: 'dropdown',
+        to: '',
         name: 'English',
       },
     ]

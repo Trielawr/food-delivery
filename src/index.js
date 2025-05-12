@@ -8,6 +8,7 @@ import './styles/layout.scss';
 import './styles/helpers.scss';
 import './index.scss';
 import App from './App';
+import '../node_modules/bootstrap/dist/css/bootstrap.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
